@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="/static/file.css">
   </head>
   <body>
+  <div class="container">
     <h1> articles list</h1>
     {%for article in articles%}
     <h2><a href="#">{{article.title}}</a></h2>
     <p>{{article.beut}}</p>
     <p>{{article.date}}</p>
     {%endfor%}
+  </div>
   </body>
 </html>
